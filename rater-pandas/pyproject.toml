@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rater-pandas"
+version = "0.0.10"
+description = "A Python library that simplifies the calculation of interrater and intrarater reliability metrics directly from pandas DataFrames."
+authors = [
+    {name = "Confusion1224", email = "chkoad@connect.ust.hk"},
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Operating System :: OS Independent"
+]
+dependencies = [
+    "pandas>=1.0.0",
+    "numpy>=1.18.0",
+    "statsmodels>=0.13.0",
+    "krippendorff>=0.8.1",
+    "pingouin>=0.5.5",
+    "scipy>=1.15.3"
+]
+
+[project.urls]
+Homepage = "https://github.com/Confusion1224/rater-pandas"
